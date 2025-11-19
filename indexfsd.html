@@ -1,11 +1,83 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Form</title>
-</head>
-<body>
-	<h1>Fun! you should join its fun</h1>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio — Your Name</title>
+    <meta name="description" content="A simple semantic portfolio template with header, navigation, about, projects and contact form.">
+  </head>
+  <body>
+    <!-- Site header -->
+    <header>
+      <div class="container">
+        <h1>Your Name</h1>
+        <p class="tagline">Front-end Developer / Designer / Problem Solver</p>
+      </div>
+    </header>
+
+    <!-- Primary navigation -->
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+      <!-- About section -->
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>Brief introduction about yourself. Mention skills, background, and what you build.</p>
+      </section>
+
+      <!-- Projects section -->
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <article class="project">
+          <h3>Project Title One</h3>
+          <p>Short description of the project, technologies used, and link to demo or repository.</p>
+          <p><a href="#">View project</a></p>
+        </article>
+
+        <article class="project">
+          <h3>Project Title Two</h3>
+          <p>Short description of the project, technologies used, and link to demo or repository.</p>
+          <p><a href="#">View project</a></p>
+        </article>
+      </section>
+
+      <!-- Contact section with semantic form -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+
+        <form id="contact-form" action="#" method="post" novalidate>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or question"></textarea>
+          </div>
+
+          <div>
+            <button type="submit">Send message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Site footer -->
+    <footer>
+      <p>&copy; <span id="year">2025</span> Your Name. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
